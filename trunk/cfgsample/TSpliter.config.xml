@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!-- push server相关配置, ip留空则不启用push功能，interval:push间隔，单位:毫秒-->
+  <pushserver ip="" port="27000" interval="1000"/>
+  
+  <!-- 接收数据,bind为绑定本机接收IP-->
+  <source ip="238.111.111.111" port="3111" bind=""/>
+
+  <!-- 解复用输出流 -->
+  <streams>
+    <!-- 解复用输出流 pid以逗号分隔-->
+    <stream ip="127.0.0.1" port="28001" pids="513,514,521"/>
+    <stream ip="127.0.0.1" port="28002" pids="1537,1538,1545"/>
+    <stream ip="127.0.0.1" port="28003" pids="1553,1554,1561"/>
+    <stream ip="127.0.0.1" port="28004" pids="1793,1794,1801"/>
+    <stream ip="127.0.0.1" port="28005" pids="1857,1858,1865"/>
+    <stream ip="127.0.0.1" port="28006" pids="2081,2082,2089"/>
+    <stream ip="127.0.0.1" port="28007" pids="2145,2146,2153"/>
+    <stream ip="127.0.0.1" port="28008" pids="2337,2338,2345"/>
+    <stream ip="127.0.0.1" port="28009" pids="273,274,281"/>
+    <stream ip="127.0.0.1" port="28010" pids="32,689,690"/>
+  </streams>
+</config>

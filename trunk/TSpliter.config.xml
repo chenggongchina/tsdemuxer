@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!-- push server相关配置, interval单位:毫秒-->
+  <pushserver ip="127.0.0.1" port="27000" interval="1000"/>
+  
+  <!-- 接收数据,bind为绑定本机接收IP-->
+  <source ip="127.0.0.1" port="1234" bind=""/>
+
+  <!-- 解复用输出流 -->
+  <streams>
+    <!-- 解复用输出流 pid以逗号分隔-->
+    <stream ip="192.168.1.113" port="3344" pids="69,68,66"/>
+    
+  </streams>
+</config>
